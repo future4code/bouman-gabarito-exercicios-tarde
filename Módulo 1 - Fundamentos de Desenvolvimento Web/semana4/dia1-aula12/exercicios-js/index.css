@@ -1,0 +1,51 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #323b3fff;
+    color: white;
+    text-align: center;
+}
+
+div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 10vh;
+    width: 20vh;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    background-color: #fe7e02;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 85%;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}

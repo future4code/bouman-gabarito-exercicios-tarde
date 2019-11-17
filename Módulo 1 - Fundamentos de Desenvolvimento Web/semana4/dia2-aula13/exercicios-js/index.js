@@ -15,8 +15,45 @@ function vejaNoConsole(ex) {
 function exercicio1() {
     iniciaExercicio("Exercício 1")
     console.log(`
-Este código mostra que 
+Este código permite verificar qual será
+o valor final do investimento para 4 tipos 
+diferentes: Poupança, Renda Fixa, CDB e Ações.
+Os "fatores multiplicativos" são, respectivamente,
+1.03, 1.05, 1.06 e 1.1. 
+Caso o usuário tente um investimento que não
+esteja na lista cidata, o codigo mostra um alert 
+com a mensagem "TIPO DE INVESTIMENTO INCORRETO".
+Os console.log seriam: 165 e undefined (já que
+utiliza um investimento "incorreto")
 `)
+
+    function investeDinheiro(tipoDeInvestimento, valor) {
+        let valorAposInvestimento
+        switch (tipoDeInvestimento) {
+            case "Popuança":
+                valorAposInvestimento = valor * 1.03
+                break;
+            case "Renda Fixa":
+                valorAposInvestimento = valor * 1.05
+                break;
+            case "CDB":
+                valorAposInvestimento = valor * 1.06
+                break;
+            case "Ações":
+                valorAposInvestimento = valor * 1.1
+                break;
+
+            default:
+                alert("TIPO DE INVESTIMENTO INCORRETO")
+                break;
+        }
+        return valorAposInvestimento
+    }
+    const novoMontante = investeDinheiro("Ações", 150)
+    const segundoMontante = investeDinheiro("Tesouro Direto", 200)
+
+    console.log(novoMontante)
+    console.log(segundoMontante)
     encerraExercicio("Exercício 1")
 }
 

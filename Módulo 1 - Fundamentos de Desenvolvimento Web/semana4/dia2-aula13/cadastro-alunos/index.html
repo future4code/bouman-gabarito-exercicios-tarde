@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <h2>Cadastro de alunos</h2>
+        <form>
+            <section id="input-section">
+                <section>
+                    <label for="nome">Nome</label>
+                    <label for="idade">Idade</label>
+                    <label for="tel">Telefone</label>
+                </section>
+                <section>
+                    <input id="nome" type="text">
+                    <input id="idade" type="number">
+                    <input id="tel" type="number">
+                </section>
+            </section>
+        </form>
+        <button onclick="cliqueEmEnviar()"> Salvar </button>
+        <button onclick="limparAlunos()"> Limpar Alunos </button>
+        <div id="lista-alunos">
+        </div>
+
+
+    </div>
+</body>
+
+</html>

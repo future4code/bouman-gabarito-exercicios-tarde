@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <section id="cadastrar-despesa">
+            <h2>Controlador de Despesas</h2>
+            <h3>Cadastrar despesas</h3>
+            <div>
+                <label for="valor">Valor</label>
+                <input type="number" id="input-valor">
+            </div>
+            <div>
+                <label for="tipo">Tipo (Casa, Viagem, Rolês, Outros)</label>
+                <select id="input-tipo">
+									<option value="Casa">Casa</option>
+									<option value="Viagem">Viagem</option>
+									<option value="Role">Rolês</option>
+									<option value="Outro">Outros</option>
+								</select>
+            </div>
+            <div>
+                <label for="descricao">Descrição</label>
+                <input id="input-descricao">
+            </div>
+            <button onclick="cadastrar()">Cadastrar Despesa</button>
+        </section>
+        <section id="despesas-detalhadas">
+            <h2>Despesas Detalhadas</h2>
+            <div>
+                <label for="filtro-tipo">Tipo (Casa, Viagem, Rolês, Outros)</label>
+                <select id="filtro-tipo">
+									<option value="Casa">Casa</option>
+									<option value="Viagem">Viagem</option>
+									<option value="Role">Rolês</option>
+									<option value="Outro">Outros</option>
+								</select>
+            </div>
+            <div>
+                <label for="filtro-valor-minimo">Valor mínimo</label>
+                <input type="number" id="filtro-valor-minimo">
+            </div>
+            <div>
+                <label for="filtro-valor-maximo">Valor máximo</label>
+                <input type="number" id="filtro-valor-maximo">
+            </div>
+            <button onclick="filtrar()">Filtrar</button>
+            <button onclick="limparFiltros()">Limpar Filtros</button>
+            <div id="container-de-despesas">
+
+            </div>
+        </section>
+        <section id="extrato">
+            <h2>Extrato</h2>
+            <h3 id="valor-total">Valor Total</h3>
+            <div id="container-do-extrato">
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

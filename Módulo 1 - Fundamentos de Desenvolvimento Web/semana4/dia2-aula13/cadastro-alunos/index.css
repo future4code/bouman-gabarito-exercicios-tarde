@@ -1,0 +1,81 @@
+#main-container {
+    text-align: center;
+}
+
+#main-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#main-container section:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align: start;
+}
+
+#main-container section:nth-child(2) {
+    width: 100%;
+}
+
+#main-container #input-section {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin: 0;
+}
+
+#lista-alunos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista-alunos>article {
+    width: 50%;
+    text-align: start;
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid orange;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#lista-alunos>article>p {
+    color: red;
+    padding: 5px;
+    align-self: flex-start;
+    border: 1px dotted white;
+}
+
+#lista-alunos>article>p:hover {
+    border: 1px dotted gray;
+}
+
+button {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 5px;
+    margin-top: 0;
+}
+
+a:active,
+a:visited {
+    color: black;
+}
